@@ -1,0 +1,641 @@
+
+
+
+
+<script>const isNyEva = false;</script><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>SchoolSoft</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+  <meta http-equiv="Expires" content="0"/>
+  <meta http-equiv="Pragma" content="no-cache"/>
+  <meta http-equiv="Cache-Control" content="no-cache"/>
+  <meta name="viewport" content="width=device-width">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#234675">
+
+  <link href="../../style/frameset.css?rev=2.7" rel="styleSheet" type="text/css"/>
+  
+    <link href="../../style/StyleSheetNew.css?rev=3.10" rel="styleSheet" type="text/css"/>
+    <link href="../../style/StyleSheetMenu.css?rev=2.5" rel="styleSheet" type="text/css"/>
+    <link href="../../style/mainSheet.css?rev=6.1" rel="styleSheet" media="all" type="text/css"/>
+    
+          <meta name="msapplication-TileColor" content="#3949AB" />
+          <meta name="theme-color" content="#3949AB" />
+          <link href="../../style/student_sheet.css?rev=2.6" rel="styleSheet" type="text/css"/>
+        
+    
+  
+  <script src="https://sprakkraft.org/lingvis-sdk/web/1.4.x"></script>
+  <script type="text/javascript" src="../../script/sprakkraft.js" ></script>
+</head>
+<body class="pushmenu-push">
+
+<script language="JavaScript" src="../../script/javascripts.js?rev=170916" type="text/javascript"></script>
+<script language="JavaScript" src="../../script/boxover.js" type="text/javascript"></script>
+<script language="JavaScript" src="../../script/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script language="JavaScript" src="../../script/jquery/jquery-migrate-1.1.0.min.js" type="text/javascript"></script>
+<script language="JavaScript" src="../../script/jquery/jquery-ui-1.10.0.min.js" type="text/javascript"></script>
+<script language="JavaScript" src="../../script/jquery/jquery.viewport.mini.js" type="text/javascript"></script>
+<script language="JavaScript" src="../../script/bootstrap/bootstrap-transition.js" type="text/javascript"></script>
+<script language="JavaScript" src="../../script/bootstrap/bootstrap-collapse.js" type="text/javascript"></script>
+<script language="JavaScript" src="../../script/bootstrap/bootstrap-dropdown.js" type="text/javascript"></script>
+<script language="JavaScript" src="../../script/jquery/jquery.PrintThis.js" type="text/javascript"></script>
+<script language="JavaScript" src="../../script/jquery/schoolsoft-jquery.js?rev=1.10" type="text/javascript"></script>
+    
+
+    
+            <div id="studentPageWrapper">
+                <div id="student-sidebar-root"></div>
+                <div id="studentContentWrapper">
+                    <div id="student-header-root"></div>
+                    <div id="content-pos-student">
+                            
+                        
+
+  <script>
+    
+    var hideMenu = sessionStorage.getItem('hideMenu') === '1';
+    if (document.getElementById("content-pos") && !hideMenu) {
+      document.getElementById("content-pos").style.setProperty("opacity", 0);
+    }
+    if (document.getElementById("content-pos-student") && !hideMenu) {
+      document.getElementById("content-pos-student").style.setProperty("opacity", 0);
+    }
+    if (document.getElementById("content-pos-parent") && !hideMenu) {
+      document.getElementById("content-pos-parent").style.setProperty("opacity", 0);
+    }
+  </script>
+
+  <link href="/friaskolor/react/jsp/main.e839cc1268b24d22b5dd.css" rel="stylesheet">
+  <script defer src="/friaskolor/react/jsp/main.505cffd44568873cbf3a.js"></script>
+
+
+                        <!-- main content begin -->
+
+
+
+
+<div id="main">
+
+  <div class="content_wrapper" id="content">
+
+<div class="h1">Scheman</div><ul class="nav nav-tabs pull-right"><li class="active" id="1"><a href="right_student_schedule.jsp?term=12">Vecka</a></li><li class="" id="2"><a href="right_student_schedule.jsp?term=-1">Termin</a></li></ul><div class="page-print"></div><div class="border-bottom"></div>
+<div class="accordion" style="clear:none;" id="accordion"><div id="left_pane" class="formtable collapsibleform span6left"><div class="formheader accordion-heading"><a class="accordion-toggle" id="" data-toggle="collapse" data-parent="#accordion" href="#collapseview"><div id="pane-header" class="accordion text">Visningsalternativ</div><button id="opencloseview" class="openclose" >+</button></a></div><div style="height: 0px; width:100%;" id="collapseview" class="accordion-body collapse"><div id="accordion-innerview" class="accordion-inner"><form name="select"id ="select"  action="right_student_schedule.jsp"  method="post"  class="formtable" ><div class=" hidden " ><div class=" hidden " ><input type="hidden" name="action" class="hidden" id="action" value="select" /></div><label for="" class="hidden"></label></div><div class=" hidden " ><div class=" hidden " ><input type="hidden" name="term" class="hidden" id="term" value="12" /></div><label for="" class="hidden"></label></div><div class="control-group"  style="" ><label for="" class="control-group-label">Visa</label><div class="controls" ><div class="control-item-holder" ><div class="control-item" ><input type="radio" name="type" value="0"  id="type0" checked="checked"  /></div><label for="type0" class="control-item-label">Klass</label></div><div class="control-item-holder" ><div class="control-item" ><input type="radio" name="type" value="2"  id="type2" /></div><label for="type2" class="control-item-label">Elev</label></div></div></div><input type="submit" name="button" value="Visa"  class="btn" /></form></div></div><div class="bottom-divview"></div></div></div>
+<div class="h2_container" id="schedule_cont"><div class="h2_box"><div class="h2_box_icon" style="margin-left:-10px; padding-top:2px;"><img src="../../images/icon/schedule.png" alt="" title="" /></div><div class=" h2 " style="margin-top:6px; padding-left:6px;">Veckoschema v 12, 18 mar - 22 mar</div><div style="float:right; padding-top:4px;"><div style="float:right;"><table cellspacing="1" cellpadding="2" ><tr><td style="border:none;" valign="middle"><a href="javascript:void(0)" onclick="popupWindow('right_student_schedule_print.jsp?action=print&amp;student=13377&amp;term=12&hidemenu=1')" ></a></td><td valign="middle"><a href="javascript:void(0)" onclick="popupWindow('right_student_schedule_print.jsp?action=print&amp;student=13377&amp;term=12&hidemenu=1')" ><img src="../../images/icon/printer.png" alt="" /></a></td></tr></table>
+</div></div><div class="selectors" style="margin-right:15px;"><div class="btn-toolbar"><div class="btn-group" id="btn-group-date-4"><a class="btn" id="date-0" href="right_student_schedule.jsp?requestid=-2&type=0&teacher=0&student=0&room=0&term=11"><div class="bold" title="Föregående Vecka">&lt;</div></a><a class="btn" id="date-1" href="right_student_schedule.jsp?requestid=-2&type=0&teacher=0&student=0&room=0&requestid=-2&term=12">Denna vecka</a><a class="btn" id="date-2" href="right_student_schedule.jsp?requestid=-2&type=0&teacher=0&student=0&room=0&term=13"><div class="bold" title="Nästa Vecka">&gt;</div></a><div id="date-week" class="btn" href=""><form action="right_student_schedule.jsp?requestid=-2&type=0&teacher=0&student=0&room=0" method="post"><select name="term" onChange="this.form.submit();" ><option value="27">v27</option><option value="28">v28</option><option value="29">v29</option><option value="30">v30</option><option value="31">v31</option><option value="32">v32</option><option value="33">v33</option><option value="34">v34</option><option value="35">v35</option><option value="36">v36</option><option value="37">v37</option><option value="38">v38</option><option value="39">v39</option><option value="40">v40</option><option value="41">v41</option><option value="42">v42</option><option value="43">v43</option><option value="44">v44</option><option value="45">v45</option><option value="46">v46</option><option value="47">v47</option><option value="48">v48</option><option value="49">v49</option><option value="50">v50</option><option value="51">v51</option><option value="52">v52</option><option value="1">v1</option><option value="2">v2</option><option value="3">v3</option><option value="4">v4</option><option value="5">v5</option><option value="6">v6</option><option value="7">v7</option><option value="8">v8</option><option value="9">v9</option><option value="10">v10</option><option value="11">v11</option><option value="12" selected="selected" >v12</option><option value="13">v13</option><option value="14">v14</option><option value="15">v15</option><option value="16">v16</option><option value="17">v17</option><option value="18">v18</option><option value="19">v19</option><option value="20">v20</option><option value="21">v21</option><option value="22">v22</option><option value="23">v23</option><option value="24">v24</option><option value="25">v25</option><option value="26">v26</option></select></form></div></div></div><div class="btn-group"><a class="btn dropdown-toggle" data-toggle="dropdown" href="#">Mitt schema<span class="caret"></span></a><ul class="dropdown-menu"><li><a href="right_student_schedule.jsp?term=12&requestid=18357">0</a></li><li><a href="right_student_schedule.jsp?term=12&requestid=18359">4A</a></li><li><a href="right_student_schedule.jsp?term=12&requestid=18365">4B</a></li><li><a href="right_student_schedule.jsp?term=12&requestid=18371">5A</a></li><li><a href="right_student_schedule.jsp?term=12&requestid=18377">5B</a></li><li><a href="right_student_schedule.jsp?term=12&requestid=18383">6A</a></li><li><a href="right_student_schedule.jsp?term=12&requestid=18389">6B</a></li><li><a href="right_student_schedule.jsp?term=12&requestid=18395">7A</a></li><li><a href="right_student_schedule.jsp?term=12&requestid=18401">7B</a></li><li><a href="right_student_schedule.jsp?term=12&requestid=18407">8A</a></li><li><a href="right_student_schedule.jsp?term=12&requestid=18413">8B</a></li><li><a href="right_student_schedule.jsp?term=12&requestid=18419">9A</a></li><li><a href="right_student_schedule.jsp?term=12&requestid=18425">9B</a></li></ul></div></div></div><div  id="schedule_cont_content" class="h2_inner" ><script language="JavaScript" src="../../script/boxover.js?rev=1.001" type="text/javascript"></script>
+<table  cellspacing="1.5" class="tab_dark" ><tr class="background schedulerow"><td align="center" class="schedulecell"><b>Tid</b></td><td align="center" colspan="4" class="schedulecell"><b>&nbsp;&nbsp;Mån</b>&nbsp;&nbsp;</td><td align="center" colspan="4" class="schedulecell"><b>&nbsp;&nbsp;Tis</b>&nbsp;&nbsp;</td><td align="center" colspan="4" class="schedulecell"><b>&nbsp;&nbsp;Ons</b>&nbsp;&nbsp;</td><td align="center" colspan="4" class="schedulecell"><b>&nbsp;&nbsp;Tor</b>&nbsp;&nbsp;</td><td align="center" colspan="4" class="schedulecell"><b>&nbsp;&nbsp;Fre</b>&nbsp;&nbsp;</td></tr><tr class="background schedulerow"><td width="5%" rowspan="6" class="schedulecell">7:00</td><td nowrap="nowrap" align="center" colspan="4" rowspan="24" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td><td nowrap="nowrap" align="center" colspan="4" rowspan="18" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td><td nowrap="nowrap" align="center" colspan="4" rowspan="18" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td><td nowrap="nowrap" align="center" colspan="4" rowspan="40" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td><td nowrap="nowrap" align="center" colspan="4" rowspan="19" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"><td width="5%" rowspan="6" class="schedulecell">7:30</td></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"><td width="5%" rowspan="6" class="schedulecell">8:00</td></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"><td width="5%" rowspan="6" class="schedulecell">8:30</td><td nowrap="nowrap" align="center" colspan="4" rowspan="12" class=" schedulecell"  style="background-color:#27485e; color:#000000; " ><div title="header=[ 8:30-9:30 Sv] body=[Personal: MSD
+<br />Sal/resurs: Qubec
+<br />Grupp: 6A
+<br />Veckor: 34-38, 40-43, 46-51, 2-8, 10, 12-13, 15-24<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=132340&term=12&requestid=-2" title=""><span  style="background-color:#27485e; color:#000000; ">Sv<br>8:30-9:30<br />Qubec
+</span></a></div></td><td nowrap="nowrap" align="center" colspan="4" rowspan="12" class=" schedulecell"  style="background-color:#8680f5; color:#000000; " ><div title="header=[ 8:30-9:30 Ma] body=[Personal: RBL
+<br />Sal/resurs: Qubec
+<br />Grupp: 6A
+<br />Veckor: 34-38, 40-43, 46-51, 2-8, 10-13, 15, 19-23<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=132228&term=12&requestid=-2" title=""><span  style="background-color:#8680f5; color:#000000; ">Ma<br>8:30-9:30<br />Qubec
+</span></a></div></td></tr>
+<tr class="background schedulerow"><td nowrap="nowrap" align="center" colspan="4" rowspan="12" class=" schedulecell"  style="background-color:#96bc0b; color:#000000; " ><div title="header=[ 8:35-9:35 Txlsl] body=[Personal: ÅAN
+<br />Sal/resurs: HongKong
+<br />Grupp: 6A:1
+<br />Period: Vt
+<br />Veckor: 2-8, 10-12, 15, 18, 20-22<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=132350&term=12&requestid=-2" title=""><span  style="background-color:#96bc0b; color:#000000; ">Txlsl<br>8:35-9:35<br />HongKong
+</span></a></div></td></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"><td width="5%" rowspan="6" class="schedulecell">9:00</td><td nowrap="nowrap" align="center" colspan="4" rowspan="6" class=" schedulecell"  ><div title="header=[ 9:00-9:30 Mentortime] body=[Personal: AMN
+MSD
+<br />Sal/resurs: Qubec
+<br />Grupp: 6A
+<br />Veckor: 34-38, 40-43, 46-51, 3-8, 11-13, 15-24<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=132466&term=12&requestid=-2" title=""><span >Mentortime<br>9:00-9:30<br />Qubec
+</span></a></div></td></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"><td width="5%" rowspan="6" class="schedulecell">9:30</td><td nowrap="nowrap" align="center" colspan="4" rowspan="4" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td><td nowrap="nowrap" align="center" colspan="4" rowspan="3" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td><td nowrap="nowrap" align="center" colspan="4" rowspan="2" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td></tr>
+<tr class="background schedulerow"><td nowrap="nowrap" align="center" colspan="4" rowspan="3" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td></tr>
+<tr class="background schedulerow"><td nowrap="nowrap" align="center" colspan="4" rowspan="8" class=" schedulecell"  style="background-color:#27485e; color:#000000; " ><div title="header=[ 9:40-10:20 Sv] body=[Personal: MSD
+<br />Sal/resurs: Qubec
+<br />Grupp: 6A
+<br />Veckor: 34-38, 40-43, 46-51, 2-8, 10-13, 15, 19-23<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=132364&term=12&requestid=-2" title=""><span  style="background-color:#27485e; color:#000000; ">Sv<br>9:40-10:20<br />Qubec
+</span></a></div></td></tr>
+<tr class="background schedulerow"><td nowrap="nowrap" align="center" colspan="4" rowspan="12" class=" schedulecell"  style="background-color:#56c834; color:#000000; " ><div title="header=[ 9:45-10:45 Pe] body=[Personal: AMN
+<br />Sal/resurs: Antarctica
+<br />Grupp: 6A
+<br />Veckor: 34-38, 40-43, 46-51, 2-8, 10, 12-13, 15-24<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=132514&term=12&requestid=-2" title=""><span  style="background-color:#56c834; color:#000000; ">Pe<br>9:45-10:45<br />Antarctica
+</span></a></div></td></tr>
+<tr class="background schedulerow"><td nowrap="nowrap" align="center" colspan="4" rowspan="12" class=" schedulecell"  style="background-color:#27485e; color:#000000; " ><div title="header=[ 9:50-10:50 Sv] body=[Personal: MSD
+<br />Sal/resurs: Qubec
+<br />Grupp: 6A
+<br />Veckor: 34-38, 40-43, 46-51, 3-8, 11-13, 15-24<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=132385&term=12&requestid=-2" title=""><span  style="background-color:#27485e; color:#000000; ">Sv<br>9:50-10:50<br />Qubec
+</span></a></div></td><td nowrap="nowrap" align="center" colspan="4" rowspan="12" class=" schedulecell"  style="background-color:#8680f5; color:#000000; " ><div title="header=[ 9:50-10:50 Ma] body=[Personal: RBL
+<br />Sal/resurs: Qubec
+<br />Grupp: 6A
+<br />Veckor: 33-43, 45-51, 2-8, 10-12, 15, 18, 20-22<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=132094&term=12&requestid=-2" title=""><span  style="background-color:#8680f5; color:#000000; ">Ma<br>9:50-10:50<br />Qubec
+</span></a></div></td></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"><td width="5%" rowspan="6" class="schedulecell">10:00</td></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"><td nowrap="nowrap" align="center" colspan="4" rowspan="1" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td><td nowrap="nowrap" align="center" colspan="4" rowspan="10" class=" schedulecell"  style="background-color:#637eb3; color:#000000; " ><div title="header=[ 10:20-11:10 Eng] body=[Personal: CEN
+<br />Sal/resurs: Qubec
+<br />Grupp: 6A
+<br />Veckor: 34-43, 46-51, 2-8, 10, 12-13, 15-18, 20-22<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=132394&term=12&requestid=-2" title=""><span  style="background-color:#637eb3; color:#000000; ">Eng<br>10:20-11:10<br />Qubec
+</span></a></div></td></tr>
+<tr class="background schedulerow"><td nowrap="nowrap" align="center" colspan="4" rowspan="9" class=" schedulecell"  style="background-color:#495ac9; color:#000000; " ><div title="header=[ 10:25-11:10 SvEn] body=[Personal: JMK
+<br />Sal/resurs: Seattle
+<br />Grupp: English6
+<br />Veckor: 34-38, 40-43, 46-51, 2-8, 10-13, 15, 19-23<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=132285&term=12&requestid=-2" title=""><span  style="background-color:#495ac9; color:#000000; ">SvEn<br>10:25-11:10<br />Seattle
+</span></a></div></td></tr>
+<tr class="background schedulerow"><td width="5%" rowspan="6" class="schedulecell">10:30</td></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"><td nowrap="nowrap" align="center" colspan="4" rowspan="3" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td></tr>
+<tr class="background schedulerow"><td nowrap="nowrap" align="center" colspan="4" rowspan="1" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td><td nowrap="nowrap" align="center" colspan="4" rowspan="1" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td></tr>
+<tr class="background schedulerow"><td nowrap="nowrap" align="center" colspan="4" rowspan="4" class=" schedulecell"  ><div title="header=[ 10:55-11:15 Mattid] body=[Grupp: 4A, 4B, 5A, 5B, 6A, 6B
+<br />Veckor: 34-38, 40-43, 46-51, 3-8, 11-13, 15-24<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=132947&term=12&requestid=-2" title=""><span >Mattid<br>10:55-11:15<br /></span></a></div></td><td nowrap="nowrap" align="center" colspan="4" rowspan="4" class=" schedulecell"  ><div title="header=[ 10:55-11:15 Mattid] body=[Grupp: 4A, 4B, 5A, 5B, 6A, 6B
+<br />Veckor: 33-43, 45-51, 2-8, 10-12, 15-18, 20-22<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=132946&term=12&requestid=-2" title=""><span >Mattid<br>10:55-11:15<br /></span></a></div></td></tr>
+<tr class="background schedulerow"><td width="5%" rowspan="6" class="schedulecell">11:00</td><td nowrap="nowrap" align="center" colspan="4" rowspan="4" class=" schedulecell"  ><div title="header=[ 11:00-11:20 Mattid] body=[Grupp: 6A
+<br />Veckor: 34-38, 40-43, 46-51, 2-8, 10, 12-13, 15-24<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=132964&term=12&requestid=-2" title=""><span >Mattid<br>11:00-11:20<br /></span></a></div></td></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"><td nowrap="nowrap" align="center" colspan="4" rowspan="1" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td><td nowrap="nowrap" align="center" colspan="4" rowspan="1" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td></tr>
+<tr class="background schedulerow"><td nowrap="nowrap" align="center" colspan="4" rowspan="6" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td><td nowrap="nowrap" align="center" colspan="4" rowspan="4" class=" schedulecell"  ><div title="header=[ 11:15-11:35 Mattid] body=[Grupp: 6A, 6B
+<br />Veckor: 34-38, 40-43, 46-51, 2-8, 10-13, 15-17, 19-23<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=132928&term=12&requestid=-2" title=""><span >Mattid<br>11:15-11:35<br /></span></a></div></td><td nowrap="nowrap" align="center" colspan="4" rowspan="4" class=" schedulecell"  ><div title="header=[ 11:15-11:35 Mattid] body=[Grupp: 6A, 6B
+<br />Veckor: 34-43, 46-51, 2-8, 10, 12-13, 15-18, 20-22<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=132948&term=12&requestid=-2" title=""><span >Mattid<br>11:15-11:35<br /></span></a></div></td><td nowrap="nowrap" align="center" colspan="4" rowspan="5" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td></tr>
+<tr class="background schedulerow"><td nowrap="nowrap" align="center" colspan="4" rowspan="5" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"><td width="5%" rowspan="6" class="schedulecell">11:30</td></tr>
+<tr class="background schedulerow"><td nowrap="nowrap" align="center" colspan="4" rowspan="3" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td><td nowrap="nowrap" align="center" colspan="4" rowspan="2" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td></tr>
+<tr class="background schedulerow"><td nowrap="nowrap" align="center" colspan="4" rowspan="9" class=" schedulecell"  style="background-color:#495ac9; color:#000000; " ><div title="header=[ 11:40-12:25 SvEn] body=[Personal: JMK
+<br />Sal/resurs: Seattle
+<br />Grupp: English6
+<br />Veckor: 33-43, 45-51, 2-8, 10-12, 15-18, 20-22<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=132277&term=12&requestid=-2" title=""><span  style="background-color:#495ac9; color:#000000; ">SvEn<br>11:40-12:25<br />Seattle
+</span></a></div></td></tr>
+<tr class="background schedulerow"><td nowrap="nowrap" align="center" colspan="1" rowspan="12" class=" schedulecell"  style="background-color:#8680f5; color:#000000; " ><div title="header=[ 11:45-12:45 Ma] body=[Personal: RBL
+<br />Sal/resurs: Qubec
+<br />Grupp: 6A
+<br />Veckor: 34-38, 40-43, 46-51, 3-8, 11-13, 15-24<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=132222&term=12&requestid=-2" title=""><span  style="background-color:#8680f5; color:#000000; ">Ma<br>11:45-12:45<br />Qubec
+</span></a></div></td><td nowrap="nowrap" align="center" colspan="3" rowspan="12" class=" schedulecell"  ><div title="header=[ 11:45-12:45 Ma-resurs] body=[Personal: MSD
+<br />Sal/resurs: Qubec
+<br />Grupp: 6A, 6B
+<br />Veckor: 34-38, 40-43, 46-51, 3-8, 11-13, 15-24<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=132225&term=12&requestid=-2" title=""><span >Ma-resurs<br>11:45-12:45<br />Qubec
+</span></a></div></td><td nowrap="nowrap" align="center" colspan="4" rowspan="8" class=" schedulecell"  style="background-color:#637eb3; color:#000000; " ><div title="header=[ 11:45-12:25 Eng] body=[Personal: CEN
+<br />Sal/resurs: Qubec
+<br />Grupp: 6A
+<br />Veckor: 34-38, 40-43, 46-51, 2-8, 10, 12-13, 15-24<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=132519&term=12&requestid=-2" title=""><span  style="background-color:#637eb3; color:#000000; ">Eng<br>11:45-12:25<br />Qubec
+</span></a></div></td><td nowrap="nowrap" align="center" colspan="4" rowspan="10" class=" schedulecell"  style="background-color:#120f7d; color:#000000; " ><div title="header=[ 11:45-12:35 So] body=[Personal: MSD
+<br />Sal/resurs: Qubec
+<br />Grupp: 6A
+<br />Veckor: 34-43, 46-51, 2-8, 10, 12-13, 15-18, 20-22<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=132495&term=12&requestid=-2" title=""><span  style="background-color:#120f7d; color:#000000; ">So<br>11:45-12:35<br />Qubec
+</span></a></div></td></tr>
+<tr class="background schedulerow"><td nowrap="nowrap" align="center" colspan="4" rowspan="12" class=" schedulecell"  style="background-color:#637eb3; color:#000000; " ><div title="header=[ 11:50-12:50 Eng] body=[Personal: CEN
+<br />Sal/resurs: Qubec
+<br />Grupp: 6A
+<br />Veckor: 34-38, 40-43, 46-51, 2-8, 10-13, 15-17, 19-23<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=132482&term=12&requestid=-2" title=""><span  style="background-color:#637eb3; color:#000000; ">Eng<br>11:50-12:50<br />Qubec
+</span></a></div></td></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"><td width="5%" rowspan="6" class="schedulecell">12:00</td></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"><td nowrap="nowrap" align="center" colspan="4" rowspan="3" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td><td nowrap="nowrap" align="center" colspan="4" rowspan="3" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td></tr>
+<tr class="background schedulerow"><td width="5%" rowspan="6" class="schedulecell">12:30</td></tr>
+<tr class="background schedulerow"><td nowrap="nowrap" align="center" colspan="4" rowspan="2" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td></tr>
+<tr class="background schedulerow"><td nowrap="nowrap" align="center" colspan="4" rowspan="12" class=" schedulecell"  style="background-color:#30e878; color:#000000; " ><div title="header=[ 12:40-13:40 NO] body=[Personal: FAD
+<br />Sal/resurs: Qubec
+<br />Grupp: 6A
+<br />Veckor: 34-38, 40-43, 46-51, 2-8, 10-13, 15-24<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=132507&term=12&requestid=-2" title=""><span  style="background-color:#30e878; color:#000000; ">NO<br>12:40-13:40<br />Qubec
+</span></a></div></td><td nowrap="nowrap" align="center" colspan="1" rowspan="10" class=" schedulecell"  style="background-color:#27485e; color:#000000; " ><div title="header=[ 12:40-13:30 Sv] body=[Personal: MSD
+<br />Sal/resurs: Qubec
+<br />Grupp: 6A
+<br />Veckor: 33-43, 45-51, 2-8, 10-12, 15-18, 20-22<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=132166&term=12&requestid=-2" title=""><span  style="background-color:#27485e; color:#000000; ">Sv<br>12:40-13:30<br />Qubec
+</span></a></div></td><td nowrap="nowrap" align="center" colspan="3" rowspan="12" class=" schedulecell"  style="background-color:#4a9e35; color:#000000; " ><div title="header=[ 12:40-13:40 Sva] body=[Personal: JMK
+<br />Sal/resurs: Renton
+<br />Grupp: 6A, 6B
+<br />Veckor: 33-43, 45-51, 2-8, 10-12, 15-18, 20-22<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=132395&term=12&requestid=-2" title=""><span  style="background-color:#4a9e35; color:#000000; ">Sva<br>12:40-13:40<br />Renton
+</span></a></div></td></tr>
+<tr class="background schedulerow"><td nowrap="nowrap" align="center" colspan="4" rowspan="3" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td><td nowrap="nowrap" align="center" colspan="1" rowspan="12" class=" schedulecell"  style="background-color:#27485e; color:#000000; " ><div title="header=[ 12:45-13:45 Sv] body=[Personal: MSD
+<br />Sal/resurs: Qubec
+<br />Grupp: 6A
+<br />Veckor: 34-43, 46-51, 2-8, 10-13, 15-18, 20-22<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=132198&term=12&requestid=-2" title=""><span  style="background-color:#27485e; color:#000000; ">Sv<br>12:45-13:45<br />Qubec
+</span></a></div></td><td nowrap="nowrap" align="center" colspan="3" rowspan="12" class=" schedulecell"  style="background-color:#4a9e35; color:#000000; " ><div title="header=[ 12:45-13:45 Sva] body=[Personal: JMK
+<br />Sal/resurs: Renton
+<br />Grupp: 6A, 6B
+<br />Veckor: 34-43, 46-51, 2-8, 10-13, 15-18, 20-22<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=132392&term=12&requestid=-2" title=""><span  style="background-color:#4a9e35; color:#000000; ">Sva<br>12:45-13:45<br />Renton
+</span></a></div></td></tr>
+<tr class="background schedulerow"><td nowrap="nowrap" align="center" colspan="4" rowspan="4" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"><td width="5%" rowspan="6" class="schedulecell">13:00</td><td nowrap="nowrap" align="center" colspan="4" rowspan="12" class=" schedulecell"  style="background-color:#30e878; color:#000000; " ><div title="header=[ 13:00-14:00 NO] body=[Personal: FAD
+<br />Sal/resurs: Qubec
+<br />Grupp: 6A
+<br />Veckor: 34-38, 40-43, 46-51, 3-5, 7-8, 11-13, 15-24<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=132363&term=12&requestid=-2" title=""><span  style="background-color:#30e878; color:#000000; ">NO<br>13:00-14:00<br />Qubec
+</span></a></div></td></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"><td nowrap="nowrap" align="center" colspan="4" rowspan="12" class=" schedulecell"  style="background-color:#120f7d; color:#000000; " ><div title="header=[ 13:10-14:10 So] body=[Personal: MSD
+<br />Sal/resurs: Qubec
+<br />Grupp: 6A
+<br />Veckor: 34-38, 40-43, 46-51, 2-5, 7-8, 10-13, 15-17, 19-23<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=132373&term=12&requestid=-2" title=""><span  style="background-color:#120f7d; color:#000000; ">So<br>13:10-14:10<br />Qubec
+</span></a></div></td></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"><td width="5%" rowspan="6" class="schedulecell">13:30</td><td nowrap="nowrap" align="center" colspan="1" rowspan="42" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"><td nowrap="nowrap" align="center" colspan="4" rowspan="1" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td><td nowrap="nowrap" align="center" colspan="3" rowspan="40" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td></tr>
+<tr class="background schedulerow"><td nowrap="nowrap" align="center" colspan="1" rowspan="12" class=" schedulecell"  style="background-color:#120f7d; color:#000000; " ><div title="header=[ 13:45-14:45 So] body=[Personal: MSD
+<br />Sal/resurs: Qubec
+<br />Grupp: 6A
+<br />Veckor: 34-38, 40-43, 46-51, 2-8, 10-13, 15-24<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=132230&term=12&requestid=-2" title=""><span  style="background-color:#120f7d; color:#000000; ">So<br>13:45-14:45<br />Qubec
+</span></a></div></td><td nowrap="nowrap" align="center" colspan="3" rowspan="12" class=" schedulecell"  ><div title="header=[ 13:45-14:45 Studiehandledning] body=[Personal: MLEti
+<br />Grupp: Shl
+<br />Veckor: 34-38, 40-43, 46-51, 2-8, 10-13, 15-24<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=133004&term=12&requestid=-2" title=""><span >Studiehandledning<br>13:45-14:45<br /></span></a></div></td><td nowrap="nowrap" align="center" colspan="4" rowspan="2" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"><td nowrap="nowrap" align="center" colspan="4" rowspan="12" class=" schedulecell"  style="background-color:#8680f5; color:#000000; " ><div title="header=[ 13:55-14:55 Ma] body=[Personal: RBL
+<br />Sal/resurs: Qubec
+<br />Grupp: 6A
+<br />Veckor: 34-43, 46-51, 2-8, 10-13, 15-18, 20-22<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=132337&term=12&requestid=-2" title=""><span  style="background-color:#8680f5; color:#000000; ">Ma<br>13:55-14:55<br />Qubec
+</span></a></div></td></tr>
+<tr class="background schedulerow"><td width="5%" rowspan="6" class="schedulecell">14:00</td><td nowrap="nowrap" align="center" colspan="4" rowspan="2" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"><td nowrap="nowrap" align="center" colspan="4" rowspan="16" class=" schedulecell"  style="background-color:#789ee1; color:#000000; " ><div title="header=[ 14:10-15:30 Musik] body=[Personal: JLF
+<br />Sal/resurs: Moscow
+<br />Grupp: 6A:1
+<br />Period: Vecka1:MånEm
+<br />Veckor: 3, 5, 8, 12, 15, 17, 19, 21, 23<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=132442&term=12&requestid=-2" title=""><span  style="background-color:#789ee1; color:#000000; ">Musik<br>14:10-15:30<br />Moscow
+</span></a></div></td><td nowrap="nowrap" align="center" colspan="4" rowspan="4" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"><td width="5%" rowspan="6" class="schedulecell">14:30</td><td nowrap="nowrap" align="center" colspan="4" rowspan="24" class=" schedulecell"  ><div title="header=[ 14:30-16:30 Läxhjälp] body=[Personal: LYI
+<br />Sal/resurs: LasVegas
+<br />Grupp: 4A, 4B, 5A, 5B, 6A, 6B, 7A, 7B, 8A, 8B, 9A, 9B
+<br />Veckor: 34-38, 40-43, 46-51, 2-5, 7-8, 10-13, 15-17, 19-23<br />]"><a class="schedule" href="right_student_schedule.jsp?lesson=133002&term=12&requestid=-2" title=""><span >Läxhjälp<br>14:30-16:30<br />LasVegas
+</span></a></div></td></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"><td nowrap="nowrap" align="center" colspan="4" rowspan="27" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"><td nowrap="nowrap" align="center" colspan="4" rowspan="25" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td></tr>
+<tr class="background schedulerow"><td width="5%" rowspan="6" class="schedulecell">15:00</td></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"><td width="5%" rowspan="6" class="schedulecell">15:30</td><td nowrap="nowrap" align="center" colspan="4" rowspan="18" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"><td width="5%" rowspan="6" class="schedulecell">16:00</td></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"><td width="5%" rowspan="6" class="schedulecell">16:30</td><td nowrap="nowrap" align="center" colspan="4" rowspan="6" class="light schedulecell"><img src="../../grafics/spacer.gif" alt=""  width="20px" height="1px"></td></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+<tr class="background schedulerow"></tr>
+</table></div></div>
+<div id="lightbox" style="display:none;"></div><script type="text/javascript">function showJQueryLightbox(){if (false) {var contentWidth = $(window).width()*0.8;} else {var contentWidth = 757;}var viewHeight = $(window).height();$('#lightbox').dialog({open: function() {if (true) {$(this).find('a.accordion-toggle').first().attr('href','#');}},modal: true,position: {my: 'right+45%', at: 'center+45% top-10%', of: '#content'},collision: 'fit',show: 'fast',maxWidth:contentWidth,minWidth:contentWidth,maxHeight:viewHeight-100,autoOpen: true});setLightboxHeader();$('#lightbox').animate({scrollTop:0}, 0);$('.ui-widget-overlay').click(function () {$('#lightbox').dialog('close');});$('.ui-dialog').find('button').focus();}function populateLightBox(data) {$('#lightbox').html(data);showJQueryLightbox()}</script>
+
+<script type="text/javascript">
+  $("a.schedule, a.scheduleSel, a.absoverview").click(function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    var lesson = 0;
+    var week   = 0;
+    var classId= 0;
+    try {
+      lesson = $(this).attr('href').match(/lesson\=([0-9]+)/)[1];
+    } catch (exc){}
+    try {
+      classId = $(this).attr('href').match(/requestid\=([0-9]+)/)[1];
+    } catch (exc){}
+    try {
+      week = $(this).attr('href').match(/term\=([0-9]+)/)[1];
+    } catch (exc){}
+
+    $.ajax({
+      url: 'right_student_schedule_ajax.jsp?term='+week+'&lesson='+lesson+'&requestid='+classId,
+      success: function(data) {   
+        $("#lightbox").html(data);
+        $("#lightbox").show();
+        showJQueryLightbox();
+      },
+      error: function(XMLHttpRequest) {
+        if (XMLHttpRequest.status === 403) {
+          $(populateLightBox('<div class="alert alert-error"><div class="strong">Varning</div><div><div class="message-text">Du är inte inloggad längre! Du måste logga in för att kunna se denna sida.</div></div></div>'));
+        }
+      },
+      cache:false
+    });
+  });
+  
+  //+-
+  $('#collapseview').on('hide', function () {
+     $("#opencloseview").html('+');
+    });
+    
+  $('#collapseview').on('show', function () {
+    $("#opencloseview").html('-');
+   });
+</script>
+
+
+
+</div><!-- ends content -->
+</div><!-- ends main -->
+
+<script type="text/javascript">
+
+  $(function() {
+    $('#schedule').attr("class","menu_item_selected");
+  });
+</script>
+
+      </div> <!-- end content-pos-student -->
+    </div> <!-- end studentContentWrapper -->
+  </div> <!-- end studentPageWrapper -->
+
+<script>
+  $(document).ready(function () {
+    initSize();
+    $('#menu_schedule').attr("class", "menu_item_selected");
+    try {
+      $('#startmenu').attr("class", "TopMenu-MenuInactive-Bg");
+    } catch (c) {
+    }
+    try {
+      $('#school').attr("class", "TopMenu-MenuInactive-Bg");
+    } catch (c) {
+    }
+    try {
+      $('#profile').attr("class", "TopMenu-MenuInactive-Bg");
+    } catch (c) {
+    }
+    try {
+      $('#startmenu').attr("class", "TopMenu-MenuActive-Bg");
+    } catch (c) {
+    }
+    ;
+  });
+</script>
+
+
+
+
+<div id="top-box" class="dontPrint">
+  <!-- First -->
+  <div id="first-warning">
+    <div id="close_icon_timer" style="display: none"></div>
+    <div class="rubrik">Varning</div>
+    <p>Du har varit inaktiv i: <span id="inactive"></span>minuter.</p>
+    <p>
+      <span id="time"></span>
+      till automatisk utloggning på grund av inaktivitet.
+      <div id="closebutton" style="text-align: center;">
+        <input type="button" name="OK" value="OK" onclick=" showContent();" style="float:left" id="okbutton" class="btn" />
+
+      </div>
+    </p>
+  </div>
+  <!-- Second -->
+  <div id="second-warning">
+    
+    <div class="rubrik">Varning</div>
+    <p>Du har nu loggats ut på grund av inaktivitet.</p>
+    <p>
+      
+      <table cellspacing="1" cellpadding="2" ><tr><td style="border:none;" valign="middle"><a href="https://sms.schoolsoft.se/friaskolor/samlLogin.jsp?usertype=student&amp;ajaxlogin=1"  onclick="showContent();"target="_blank" >Till inloggningssidan</a></td><td style="border:none;" valign="bottom"><a href="https://sms.schoolsoft.se/friaskolor/samlLogin.jsp?usertype=student&amp;ajaxlogin=1"  onclick="showContent();"target="_blank" ><img src="../../images/icon/arrow-000-medium.png" alt="" ></a></td></tr></table>
+
+    </p>
+    
+</div>
+</div>
+<script language="JavaScript" type="text/javascript">
+
+    var topRightTimer;
+    var timeBetweenWarnAndLogout;
+    var timeUntilLogout;
+    var timeout;
+    var counter = 0;
+    var failedLogins = 0;
+    var halfMinCorrection = 30000;
+
+    var lastAccessTime = new Date().getTime();
+    var timeLoggedIn = 0;
+    var updateInterval = 1000;
+
+    if(typeof window.localStorage !== "undefined"){
+        localStorage.setItem("lastAccessTime", new Date().getTime());
+    }
+
+    resetTimer();
+
+    //Set top-right logout timer
+    var logoutTimer = timeUntilLogout;
+
+    function setTopRightTimer() {
+        $('#timeUntilLogout').html((logoutTimer/60000).toFixed(0) + " minuter till automatisk utloggning");
+        topRightTimer = setInterval(function () {
+
+            //If browser support localstorage
+            if (typeof window.localStorage !== "undefined") {
+                logoutTimer -= updateInterval;
+                //New lastAccessTime is set in another tab
+                if(lastAccessTime != localStorage.getItem("lastAccessTime") && timeUntilLogout > 0){
+                    $('#top-box').hide(0, onTopBoxHidden);
+                    lastAccessTime = localStorage.getItem("lastAccessTime");
+                    clearTimeout(timeout);
+                    showContent();
+                    resetTimer();
+                }
+
+                timeLoggedIn = new Date().getTime() - lastAccessTime;
+                logoutTimer = 1800000 - timeLoggedIn;
+                $('#timeUntilLogout').html(((logoutTimer + halfMinCorrection) / 60000).toFixed(0) + " minuter till automatisk utloggning");
+
+                if (timeLoggedIn > 1800000){
+                    $('#timeUntilLogout').html("Ej inloggad");
+                    clearInterval(topRightTimer);
+                }
+            } else {
+                logoutTimer -= updateInterval;
+                $('#timeUntilLogout').html(((logoutTimer + halfMinCorrection) / 60000).toFixed(0) + " minuter till automatisk utloggning");
+
+                if (logoutTimer <= 0) {
+                    $('#timeUntilLogout').html("Ej inloggad");
+                    clearInterval(topRightTimer);
+                }
+            }
+        }, updateInterval);
+    }
+    setTopRightTimer();
+
+    function showTopBox(timer){
+        $('#top-box').show(0, onTopBoxShown);
+        $('#top-box').focus();
+        $('#top-box').css('top', $(window).scrollTop());
+        $('#top-box').css('left', ($(window).width()/2) - (parseInt($('#top-box').css('width'))/2));
+        if(timer > 0){
+            toggleBackSpace(false);
+            $('#first-warning').show();
+            $('#second-warning').hide();
+        }else{
+            toggleBackSpace(true);
+            hideContent();
+            $('#content_wrapper').hide();
+            $('#first-warning').hide();
+          
+            $('#second-warning').show();
+            $('#sspassword_ajax').focus();
+          
+        }
+        $('#top-box').animate({height: "230px"}, 400);
+    }
+
+    function onTopBoxHidden() {
+      toggleBackSpace(true);
+    }
+
+    function onTopBoxShown() {
+      toggleBackSpace(false);
+    }
+    function showContent(){
+        toggleBackSpace(true);
+        $('#content_wrapper').show();
+        $('#top-box').hide(0, onTopBoxHidden);
+        
+    }
+
+    function hideContent(){
+        toggleBackSpace(false);
+        $('#content_wrapper').hide();
+        $('#top-box').focus();
+    }
+
+    function autoClick(){
+      toggleBackSpace(true);
+      $('#content_wrapper').show();
+      $('#top-box').hide(0, onTopBoxHidden);
+    }
+
+    function resetTimer() {
+        timeBetweenWarnAndLogout = 300000; // time before timeout to display warning: 5min=300000 1min = 60000
+        timeUntilLogout = 1800000;
+        logoutTimer = timeUntilLogout;
+        if (timeUntilLogout==null) {
+            timeUntilLogout = 1800000; //30 minutes default if not set on server
+        }
+        counter=0;
+        timeout=setTimeout("showTopBox('"+(timeUntilLogout - timeBetweenWarnAndLogout)+"'); timedCount();",timeUntilLogout - timeBetweenWarnAndLogout);
+    }
+
+    function timedCount() {
+        var timeLeft = (((timeBetweenWarnAndLogout))/1000)-counter;
+        if (timeLeft >= 0) {
+            var minutes = Math.floor(timeLeft /60);
+            var seconds = timeLeft - minutes * 60;
+            $('#time').html(((minutes<10)?"0"+minutes:minutes)+':'+((seconds<10)?"0"+seconds:seconds));
+            $('#inactive').html(((timeUntilLogout-timeBetweenWarnAndLogout)/60000).toFixed(0) + " ");
+            counter++;
+            timeout=setTimeout("timedCount()",1000);
+        } else {
+            clearTimeout(timeout);
+            showTopBox(0);
+        }
+    }
+
+    function relogin() {
+        var usertype = $('#usertype_ajax').val();
+        var sspassword = $('#sspassword_ajax').val();
+        var ssusername = $('#ssusername_ajax').val();
+        var orgid = $('#organization_ajax').val();
+        var formData = {usertype:usertype,ssusername:ssusername,sspassword:sspassword,ajaxlogin:1,organization:orgid};
+    $.ajax({
+        url: "../Login.jsp?action=login",
+        cache: false,
+        type: "POST",
+        data: formData,
+        success: function(data) {
+            $('#sspassword_ajax').val('');
+            $('#wrongpasswd').css("display",'none');
+            if (data.replace(/^\s+|\s+$/g, '') == "login ok") { //special since IE can't use trim()
+                $('#wrongpasswd').css("display",'none');
+                $('#wrongpasswddisabled').css("display",'none');
+                showContent();
+                resetTimer();
+                setTopRightTimer();
+                failedLogins = 0;
+                if (typeof window.localStorage !== "undefined") {
+                  localStorage.setItem("lastAccessTime", new Date().getTime());
+                }
+            } else if (data.replace(/^\s+|\s+$/g, '') == "login failed") {
+                failedLogins++;
+                if (failedLogins>1) {
+                    $('#sspassword_ajax').attr('disabled','disabled');
+                    $('#loginbutton').attr('disabled','disabled');
+                    $('#wrongpasswddisabled').css("display",'');
+                } else {
+                    $('#wrongpasswd').css("display", 'block');
+                }
+            }
+        },
+        error : function(data) {
+            //
+        }
+    });
+    }
+
+    function toggleBackSpace(on) {
+        //if on enable backspace
+        if (on) {
+          $(document).unbind('keydown');
+        } else {
+            $(document).bind({
+                keydown: function (event) {
+                    if (event.keyCode == 8 && $(event.target).attr('id') != 'sspassword_ajax') {//8 = backspace
+                        event.stopPropagation();
+                        event.preventDefault();
+                    }
+                }
+            });
+        }
+    }
+
+</script>
+
+
+</body>
+</html>
+

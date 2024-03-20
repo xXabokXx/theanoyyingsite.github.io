@@ -1,0 +1,406 @@
+<!--
+/* New style sheet, used in top and menu */
+/* $Id$ */
+/*----------- Elements Start ------------*/
+#container
+{
+  background-color:#fafafa;
+  margin: 0;
+  padding: 0;
+  text-align: left; /*X*/
+  font-family: Helvetica,Verdana,Arial,sans-serif; 
+  font-weight: normal;
+}
+body.leftmenu, body.right 
+{
+  background: #fafafa;
+  margin: 0;
+  padding: 0;
+  text-align: left; /*X*/
+  font-family: Helvetica,Verdana,Arial,sans-serif; 
+  font-weight: normal;
+}
+img
+{
+  border: 0;
+}
+ul
+{
+  margin: 0;
+  padding: 0;
+}
+li
+{
+  margin: 0;
+  padding: 0;
+}
+
+/*-------------------- LOGO COLOR -----------------*/
+
+a
+{
+  text-decoration:none;
+}
+
+/*----------- Elements End ------------*/
+
+/*----------- Various ------------*/
+.float-right{
+	float: right;
+}
+
+.smallBusinessCardPicAdjust{
+	width: 50px;
+	margin-top: -17px;
+	margin-left: 10px;
+}
+
+/* Profile picture styles for student */
+.profile-picture-border{
+  padding:0px;
+  border: 2px solid #DDD;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+/* Automatic logout box style student/parent */
+#top-box {
+  width: 482px;
+  height: 0;
+  z-index: 1000000;
+  background-color: white;
+  color: black;
+  position: fixed;
+  border: 1px solid black;
+  display: none;
+  padding: 30px;
+}
+#top-box table{
+  width: inherit;
+}
+#top-box .btn{
+  float: inherit;
+}
+
+/*----------- Div#Top Start ------------*/
+#top
+{
+  background: url(../images/top.png) no-repeat;
+  text-align: left;
+  height: 39px;
+  min-width: 981px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2;
+}
+#top_content
+{
+  padding: 0 0 0 230px;
+}
+#top_content span.text
+{
+  vertical-align: top;
+}
+
+#top_content span.text span.btn-group{
+  float:none;
+}
+#top_content span.text span.btn-group:before, #top_content span.text span.btn-group:after{
+  display:inline;
+}
+
+#top_content span.text span.btn-group a.btn{
+  float:none;
+  display:inline;
+}
+
+.divider
+{
+  position: relative;
+  top: -10px;
+  margin:0 10px 0 10px;
+}
+a:active, a:focus {
+outline: 0
+}
+#logout a, #schoolleader a
+{
+  vertical-align:top;
+  color:#ffffff; 
+  border-bottom: 1px dotted #ffffff;
+}
+#logout a:hover, #schoolleader a:hover 
+{
+  border-bottom: 1px solid #ffffff; 
+}
+/** wrapper in top menu **/
+#top_content_wrapper 
+{
+  position: absolute;
+  left: 206px;
+  top: 44px;
+  float: left;
+  width: 762px;
+  padding:4px 4px 0 9px;
+}
+#content
+{
+  padding-top:8px;
+}
+
+.top-gray-bar-info{
+    float: left;
+    padding-top: 10px;
+}
+
+
+/*---------- End Div#Top  ------------*/
+
+/*---------- Start Div#menu_left -----*/
+#leftContainer
+{
+  text-align: left;
+/*  margin: 0 auto 0 auto; */ /*X*/
+  width: 0px; /* 981px when one page*/ 
+}
+#leftMenu {
+  float: left;
+  position:relative;
+  width: 179px;
+  margin-left: 12px;
+  line-height: 1.2;
+  display: inline; /*IE6*/
+  background-color: #ffffff;
+  margin-top:9px;
+  border-left: 1px solid #CCCCCC;
+  border-top: 1px solid #CCCCCC;
+}
+
+#container
+{
+  text-align: left;
+/*  margin: 0 auto 0 auto; */ /*X*/
+  width: 981px; /* 981px when one page*/ 
+}
+
+#top_left
+{
+  float: left;
+  position:absolute; /*old:relative*/
+  width: 179px;
+  margin-top: -23px!important;
+  margin-top: -37px;
+  margin-left: 27px;
+  font-size: 13px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.2;
+  display: inline; /*IE6*/
+  top:39px; /*old: remove */
+}
+/*-------------------- LOGO COLOR -----------------*/
+
+#logo
+{
+  /* background: #942094 url(../images/loggoruta.png) no-repeat; */
+  /* overruled by individual user style */
+  width: 179px;
+  height: 85px;
+}
+#logo_image
+{ padding: 3px 4px 0px 4px !important; /* 2px,0,0,2px för 175x81 logga med runda hörn*/
+  padding: 2px 0px 0px 4px; /* Only IE6. */    
+  text-align: center;
+  /*display: inline-block ; /* fixes bug with box model ie7 */
+}
+
+.expand_image
+{
+  display:block;
+  margin-right: 12px;
+  float: right;
+}
+
+/*** Start left menu styling ***/
+#menu_left {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+/*   line-height:14px; Not good for IE*/
+/*   height:100%; */
+/*     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); */
+    width:179px;
+    float:left;
+}
+.menu_top, .menu_header, .menu_item, .menu_item_selected{
+  border-left: none;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid transparent;
+  border-top: none;
+  padding-left: 12px;
+  padding-top:6px;
+  min-height:16px;
+  padding-bottom: 5px;
+  vertical-align:middle;
+}
+.menu_top, .menu_header {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #343434;
+      border-bottom: 1px solid #cccccc;
+}
+.menu_top {
+  padding-top:8px;
+      border-right: 1px solid #cccccc;
+
+}
+.menu_header {
+  height: 20px;
+  padding-bottom:1px;
+    border-right: 1px solid #cccccc;
+
+}
+.menu_item {
+  padding-left: 17px;  
+  cursor:pointer; cursor:hand;
+  border-radius: 0 0 0 0;
+  border-bottom: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+
+  }
+.menu_item_selected {      
+  padding-left: 17px;
+  cursor:pointer; cursor:hand;
+  border-radius: 0 0 0 0;
+  background:#f5f5f5;
+  border-bottom: 1px solid #cccccc;
+/*  border-right:none; */
+  color:#000000;
+
+
+}
+.menu_item:hover {    
+  color: #5f5f5f;
+  background:#f5f5f5;
+  border-bottom: 1px solid #cccccc;
+
+  padding-left: 17px;  
+  cursor:pointer; cursor:hand;
+}
+
+/*** End left menu styling ***/
+
+.hand
+{
+  cursor:pointer; cursor:hand;
+}
+
+/*** Start top menu styling ***/
+
+#menu a {
+    color: #FFFFFF;
+}
+
+#menu {
+    font-size: 14px;
+
+    font-weight: bold;
+}
+.TopMenu-Thick-Left
+{
+  background: url(../images/menu/TopMenu-Thick-Left.png) no-repeat;
+  height: 54px;
+  width: 7px;
+}
+.TopMenu-Menu-Right
+{
+  background: url(../images/menu/TopMenu-Menu-Bg.png) repeat-x;
+  height: 54px;
+}
+.TopMenu-Thick-Bg
+{
+  background: url(../images/menu/TopMenu-Thick-Bg.png) repeat-x;
+  height: 54px;
+  width: 100px;
+}
+.TopMenu-Thick-Bg-Right
+{
+  background: url(../images/menu/TopMenu-Thick-Bg.png) repeat-x;
+  height: 54px;
+  width: 65px;
+}
+.TopMenu-Thick-Bg-Right-2
+{
+  background: url(../images/menu/TopMenu-Thick-Bg.png) repeat-x;
+  height: 54px;
+  width: 10px;
+}
+.TopMenu-Thick-Bg-Left
+{
+  background: url(../images/menu/TopMenu-Thick-Bg.png) repeat-x;
+  height: 54px;
+  width: 125px;
+}
+.TopMenu-Menu-Left-Bg
+{
+  background: url(../images/menu/TopMenu-Menu-Left-Bg.png);
+  height: 54px;
+  width: 11px;
+}
+.TopMenu-Menu-Left
+{
+  background: url(../images/menu/TopMenu-Menu-Bg.png) no-repeat;
+  height: 54px;
+  width: 6px;
+}
+.TopMenu-Menu-Bg
+{
+  background: url(../images/menu/TopMenu-Menu-Bg.png) repeat-x;
+  height: 54px;
+}
+.TopMenu-MenuActive-Left
+{
+  background: url(../images/menu/TopMenu-MenuActive-Left.png) no-repeat;
+  height: 54px;
+  width: 11px;
+}
+.TopMenu-MenuActive-Bg
+{
+  background: url(../images/menu/TopMenu-Thick-Bg.png) repeat-x;
+  height: 54px;
+}
+.TopMenu-MenuActive-Right
+{
+  background: url(../images/menu/TopMenu-MenuActive-Right.png) no-repeat;
+  height: 54px;
+  width: 12px;
+}
+.TopMenu-Menu-Right-Bg
+{
+  background: url(../images/menu/TopMenu-Menu-Right-Bg.png) no-repeat;
+  height: 54px;
+  width: 11px;
+}
+.TopMenu-MenuInactive-Bg
+{
+  background: url(../images/menu/TopMenu-Menu-Bg.png) repeat-x;
+  height: 54px;
+}
+.TopMenu-Thick-Circle
+{
+  background: url(../images/menu/TopMenu-Thick-Circle.png) no-repeat;
+  height: 54px;
+  width: 30px;
+}
+.TopMenu-Thick-Right
+{
+  background: url(../images/menu/TopMenu-Thick-Right.png) no-repeat;
+  height: 54px;
+  width: 7px;
+}
+
+/*---------- End Div#Menu ----------------*/
+
+-->
